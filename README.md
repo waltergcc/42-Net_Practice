@@ -75,4 +75,22 @@ After performing each exercise a button called `get my config` appears. By click
 4. Change `📶 B1 IP address` to the same of `📶 A1` but change the last octet to the next number.
 
 </details>
+
+<details>
+  <summary>Level 4</summary>
+
+##### Goals
+- `🖥 A` comunicate with `🖥 B`
+- `🖥 A` comunicate with `🔗 R`
+
+#### Founded Issues
+- [ ] `📶 R1, A1 and B1` masks are wrong when its compared with `📶 R2 and R3`
+- [ ] `📶 R1 and B1` are using a different IP address range when its compared with `📶 A1`
+
+#### How to fix?
+1. Change `📶 R1 Mask` to the same of `📶 R2`
+2. Change `📶 A1 Mask` to the same of `📶 R2`
+3. Change `📶 B1 Mask` to the same of `📶 R2`
+4. Change `📶 R1 IP address` to the same of `📶 A1` but change the last octet to the previous number.
+5. Change `📶 B1 IP address` to the same of `📶 A1` but change the last octet to the next number.
   
