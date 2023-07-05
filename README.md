@@ -21,7 +21,8 @@ After performing each exercise a button called `get my config` appears. By click
 
 ## My Solutions
 
-### Level 1
+<details>
+  <summary>Level 1</summary>
 
 ##### Goals
 - `🖥️ A` comunicate with `🖥️ B`
@@ -35,7 +36,10 @@ After performing each exercise a button called `get my config` appears. By click
 1. Change `📶 A1 IP address` to the same of `📶 B1` but change the last octet to the next number.
 2. Change `📶 C1 IP address` to the same of `📶 D1` but change the last octet to the next number.
 
-### Level 2
+</details>
+
+<details>
+  <summary>Level 2</summary>
 
 ##### Goals
 - `🖥 B` comunicate with `🖥 A`
@@ -51,3 +55,24 @@ After performing each exercise a button called `get my config` appears. By click
 3. Change `📶 C1 IP address` to `192.168.1.253`
 3. Change `📶 D1 IP address` to `192.168.1.254`
 
+</details>
+
+<details>
+  <summary>Level 3</summary>
+
+##### Goals
+- `🖥 A` comunicate with `🖥 B`
+- `🖥 A` comunicate with `🖥 C`
+- `🖥 B` comunicate with `🖥 C`
+
+#### Founded Issues
+- [ ] - The 3 computers are connected to each other trought a switch but they are using different Masks and IP address ranges.
+
+#### How to fix?
+1. Change `📶 A1 Mask` to the same of `📶 C1`
+2. Change `📶 B1 Mask` to the same of `📶 C1`
+3. Change `📶 C1 IP address` to the same of `📶 A1` but change the last octet to the previous number.
+4. Change `📶 B1 IP address` to the same of `📶 A1` but change the last octet to the next number.
+
+</details>
+  
