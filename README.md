@@ -33,8 +33,8 @@ After performing each exercise a button called `get my config` appears. By click
 - [ ] - `💻 C` and `🖥️ D` has an established cable connection but they are using a different IP address range.
 
 #### How to fix?
-1. Change `📶 A1 IP address` to the same of `📶 B1` but change the last octet to the next number.
-2. Change `📶 C1 IP address` to the same of `📶 D1` but change the last octet to the next number.
+1. Change `📶 A1 IP address` to the same of `📶 B1` + 1.
+2. Change `📶 C1 IP address` to the same of `📶 D1` + 1.
 
 </details>
 
@@ -51,7 +51,7 @@ After performing each exercise a button called `get my config` appears. By click
 
 #### How to fix?
 1. Change `📶 B1 Mask` to the same of `📶 A1`
-2. Change `📶 A1 IP address` to the same of `📶 B1 IP address` but change the last octet to the previous number.
+2. Change `📶 A1 IP address` to the same of `📶 B1 IP address` - 1.
 3. Change `📶 C1 IP address` to `192.168.1.253`
 3. Change `📶 D1 IP address` to `192.168.1.254`
 
@@ -71,8 +71,8 @@ After performing each exercise a button called `get my config` appears. By click
 #### How to fix?
 1. Change `📶 A1 Mask` to the same of `📶 C1`
 2. Change `📶 B1 Mask` to the same of `📶 C1`
-3. Change `📶 C1 IP address` to the same of `📶 A1` but change the last octet to the previous number.
-4. Change `📶 B1 IP address` to the same of `📶 A1` but change the last octet to the next number.
+3. Change `📶 C1 IP address` to the same of `📶 A1` - 1.
+4. Change `📶 B1 IP address` to the same of `📶 A1` + 1.
 
 </details>
 
@@ -91,8 +91,8 @@ After performing each exercise a button called `get my config` appears. By click
 1. Change `📶 R1 Mask` to the same of `📶 R2`
 2. Change `📶 A1 Mask` to the same of `📶 R2`
 3. Change `📶 B1 Mask` to the same of `📶 R2`
-4. Change `📶 R1 IP address` to the same of `📶 A1` but change the last octet to the previous number.
-5. Change `📶 B1 IP address` to the same of `📶 A1` but change the last octet to the next number.
+4. Change `📶 R1 IP address` to the same of `📶 A1` - 1.
+5. Change `📶 B1 IP address` to the same of `📶 A1` + 1.
 
 </details>
 
@@ -114,10 +114,10 @@ After performing each exercise a button called `get my config` appears. By click
 1. Change `🔄 A From` to `default`
 2. Change `🔄 A To` to `📶 R1 IP adress`
 3. Change `📶 A1 Mask` to the same of `📶 R1`
-4. Change `📶 A1 IP address` to the same of `📶 R1` but change the last octet to the previous number.
+4. Change `📶 A1 IP address` to the same of `📶 R1` - 1.
 5. Change `🔄 B To` to `📶 R2 IP adress`
 6. Change `📶 B1 Mask` to the same of `📶 R2`
-7. Change `📶 B1 IP address` to the same of `📶 R2` but change the last octet to the previous number.
+7. Change `📶 B1 IP address` to the same of `📶 R2` - 1.
 
 </details>
 
@@ -135,10 +135,10 @@ After performing each exercise a button called `get my config` appears. By click
 
 #### How to fix?
 1. Change `📶 A1 Mask` to the same of `📶 R1 Mask`
-2. Change `📶 R1 IP address` to the same of `📶 A1 IP address` but change the last octet to the previous number.
+2. Change `📶 R1 IP address` to the same of `📶 A1 IP address` - 1.
 3. Change `🔄 A To` to `📶 R1 IP address`
 4. Change `🔄 R From` to `default`
-5. Change `🔄 Internet From` to `📶 A1 IP address` plus CIDR Notation of its Mask. In this case `34.146.38.227/25`
+5. Change `🔄 Internet From` to `📶 A1 IP address` + CIDR Notation of its Mask. In this case `34.146.38.227/25`
 
 </details>
 
@@ -160,7 +160,7 @@ After performing each exercise a button called `get my config` appears. By click
 #### How to fix?
 1. Change all Masks to '/26'
 2. Change `🔄 A To` to `📶 R11 IP address`
-3. Change `📶 R21 IP address` to the same of `📶 R11 IP address` but change the last octet to the previous number.
+3. Change `📶 R21 IP address` to the same of `📶 R11 IP address` - 1.
 4. Change `🔄 R1 To` to `📶 R21 IP address`
 5. Change `🔄 R2 To` to `📶 R12 IP address`
 6. Change `📶 R22 IP address` to `103.198.14.65`
@@ -188,13 +188,54 @@ After performing each exercise a button called `get my config` appears. By click
 2. Change `🔄 R1 and R2 From` to `default`
 3. Change `📶 All Masks` to the same of `📶 R12 Mask`
 4. Change `📶 R13 IP address` to the same of `🔄 R2 To`
-5. Change `📶 R21 IP address` to the same of `📶 R13` but change the last octet to the previous number.
+5. Change `📶 R21 IP address` to the same of `📶 R13` - 1.
 6. Change `🔄 R1 To` to `📶 R21`.
-7. Change `📶 R23 IP address` to the same of `🔄 Internet To` but change the last octet to the first range of 16.
-8. Change `📶 R22 IP address` to the same of `🔄 Internet To` but change the last octet to the second range of 16.
-9. Change `📶 D1 IP address` to the same of `📶 R23` but change the last octet to the next number.
+7. Change `📶 R23 IP address` to the same of `🔄 Internet To` + 1.
+8. Change `📶 R22 IP address` to the same of `🔄 Internet To` + 17.
+9. Change `📶 D1 IP address` to the same of `📶 R23` + 1.
 10. Change `🔄 D To` to `📶 R23`.
-11. Change `📶 C1 IP address` to the same of `📶 R22` but change the last octet to the next number.
+11. Change `📶 C1 IP address` to the same of `📶 R22` + 1.
 12. Change `🔄 C To` to `📶 R22`.
+
+</details>
+
+<details>
+  <summary>Level 9</summary>
+
+#### Goals
+- `🖥 A` comunicate with `🖥 B`
+- `🖥 C` comunicate with `🖥 D`
+- `🖥 A` connect with the `🌐 Internet`
+- `🖥 A` comunicate with `🖥 D`
+- `🖥 B` comunicate with `🖥 C`
+- `🖥 C` connect with the `🌐 Internet`
+
+#### Founded Issues
+- [ ] `🔄 Internet From` has many entries
+- [ ] `🔄 R1 To` has many entries
+- [ ] `📶 R11, R22 and R23 Subnets` are all wrong
+- [ ] `📶 R12 and R13 IP address` are wrong
+
+#### How to fix?
+1. Delete 1 entry of `🔄 Internet From`
+2. Delete 1 entry of `🔄 R1`
+3. Change `🔄 Àll To` to `default`
+4. Change `📶 R11 Subnet Mask` to the same of `📶 R11`
+5. Change `📶 R11 IP address` to `42.5.4.1`
+6. Change `🔄 A and B` to `📶 R11`
+7. Change `📶 A1 IP address` to the same of `📶 R11` + 1
+8. Change `📶 B1 IP address` to the same of `📶 R11` + 2
+9. Change `🔄 Internet From` to 4`2.5.4.0/24`
+10. Change `📶 R22 IP address` to `76.2.3.1`
+11. Change `🔄 C To` to `76.2.3.1`
+12. Change `📶 C1 IP address` to the same of `📶 R23` + 1
+13. Change `🔄 Internet second From` to `76.2.3.0/24`
+14. Change `📶 R23 IP address` to the same of `🔄 D To`
+15. Change `📶 D1 Mask` to the same of `📶 R23`
+16. Change `📶 D1 IP address` to the same of `📶 R23` + 1
+17. Change `📶 R13 Mask` to the same of `📶 R21`
+18. Change `📶 R21 IP address` to the same of `📶 R13` - 1
+19. Change `🔄 R1 To` to `📶 R21`
+19. Change `🔄 R2 To` to `📶 R13`
 
 </details>
