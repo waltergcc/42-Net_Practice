@@ -168,3 +168,33 @@ After performing each exercise a button called `get my config` appears. By click
 8. Change `🔄 C1 To` to `📶 R22 IP address`
 
 </details>
+
+<details>
+  <summary>Level 8</summary>
+
+#### Goals
+- `🖥 C` comunicate with `🖥 D`
+- `🖥 C` connect with the `🌐 Internet`
+- `🖥 D` connect with the `🌐 Internet`
+
+#### Founded Issues
+- [ ] `🔄 R1 and R2 From` are wrong.
+- [ ] `🔄 All From except R2 are wrong.
+- [ ] `📶 All masks except R12` are wrong.
+- [ ] `📶 All IP address except R12` are wrong.
+
+#### How to fix?
+1. Change `🔄 Internet to` to `📶 R12 IP address`
+2. Change `🔄 R1 and R2 From` to `default`
+3. Change `📶 All Masks` to the same of `📶 R12 Mask`
+4. Change `📶 R13 IP address` to the same of `🔄 R2 To`
+5. Change `📶 R21 IP address` to the same of `📶 R13` but change the last octet to the previous number.
+6. Change `🔄 R1 To` to `📶 R21`.
+7. Change `📶 R23 IP address` to the same of `🔄 Internet To` but change the last octet to the first range of 16.
+8. Change `📶 R22 IP address` to the same of `🔄 Internet To` but change the last octet to the second range of 16.
+9. Change `📶 D1 IP address` to the same of `📶 R23` but change the last octet to the next number.
+10. Change `🔄 D To` to `📶 R23`.
+11. Change `📶 C1 IP address` to the same of `📶 R22` but change the last octet to the next number.
+12. Change `🔄 C To` to `📶 R22`.
+
+</details>
