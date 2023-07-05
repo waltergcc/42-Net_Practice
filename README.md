@@ -141,4 +141,30 @@ After performing each exercise a button called `get my config` appears. By click
 5. Change `🔄 Internet From` to `📶 A1 IP address` plus CIDR Notation of its Mask. In this case `34.146.38.227/25`
 
 </details>
-  
+
+<details>
+  <summary>Level 7</summary>
+
+#### Goals
+- `🖥 A` comunicate with `🖥 C`
+
+#### Founded Issues
+- [ ] `📶 A1 and R11` are in the wrong range because the others R's network are using next ranges.
+- [ ] `🔄 A To` don't points to the correct `📶 R11 IP address`.
+- [ ] `🔄 R1 To` is wrong.
+- [ ] `📶 R12, R21, R22 and C1 Masks` are wrong
+- [ ] `📶 R21, R22 and C1 IṔ address` are wrong
+- [ ] `🔄 R2 To` is wrong.
+- [ ] `🔄 C1 To` is wrong.
+
+#### How to fix?
+1. Change all Masks to '/26'
+2. Change `🔄 A To` to `📶 R11 IP address`
+3. Change `📶 R21 IP address` to the same of `📶 R11 IP address` but change the last octet to the previous number.
+4. Change `🔄 R1 To` to `📶 R21 IP address`
+5. Change `🔄 R2 To` to `📶 R12 IP address`
+6. Change `📶 R22 IP address` to `103.198.14.65`
+7. Change `📶 C1 IP address` to `103.198.14.66`
+8. Change `🔄 C1 To` to `📶 R22 IP address`
+
+</details>
