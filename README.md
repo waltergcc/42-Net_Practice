@@ -239,3 +239,38 @@ After performing each exercise a button called `get my config` appears. By click
 19. Change `🔄 R2 To` to `📶 R13`
 
 </details>
+
+<details>
+  <summary>Level 10</summary>
+
+#### Goals
+- `🖥 H1` comunicate with `🖥 H2`
+- `🖥 H3` comunicate with `🖥 H4`
+- `🖥 H1` connect with the `🌐 Internet`
+- `🖥 H1` comunicate with `🖥 H4`
+- `🖥 H2` comunicate with `🖥 H3`
+- `🖥 H3` connect with the `🌐 Internet`
+- `🖥 H4` connect with the `🌐 Internet`
+
+#### Founded Issues
+- [ ] `🔄 Internet From` not fill all IPs
+- [ ] `🔄 R1 first From` is wrong
+- [ ] `📶 H1 and H2 Masks` are wrong
+- [ ] `📶 H2 IP address` is wrong
+- [ ] `📶 R13 Mask` is wrong
+- [ ] `📶 R22, R23 and H31 Mask and IP` are wrong
+- [ ] `🔄 H3 To` is wrong
+
+#### How to fix?
+1. Change `🔄 Internet From` to `📶 R11 IP address` but with the last octet as `0` + CDIR notation /24
+2. Change `📶 H1 and H2 Mask` to the same of `📶 R11`
+3. Change `📶 H2 IP address` to the same of `📶 H1` + 1
+4. Change `📶 R13 Mask` to the same of `📶 R12`
+5. Change `📶 R23 Mask` to the same of `📶 H41`
+6. Change `📶 R23 IP address` to the same of `🔄 H4 To`
+7. Change `📶 R22 and H31 Mask` to `255.255.255.224`
+8. Change `📶 R22 IP address` to `135.185.182.193`
+9. Change `📶 H31 IP address` to the same of `R22` + 1
+10. Change `🔄 H3 To` to `📶 R22`
+
+</details>
