@@ -24,30 +24,30 @@ After performing each exercise a button called `get my config` appears. By click
 ### Level 1
 
 ##### Goals
-- `🖥️A` comunicate with `🖥️B`
-- `💻C` comunicate with `🖥️D`
+- `🖥️ A` comunicate with `🖥️ B`
+- `💻 C` comunicate with `🖥️ D`
 
 #### Founded Issues
-- [ ] - `🖥️A` and `🖥️B` has an established cable connection but they are using a different IP address range.
-- [ ] - `💻C` and `🖥️D` has an established cable connection but they are using a different IP address range.
+- [ ] - `🖥️ A` and `🖥️ B` has an established cable connection but they are using a different IP address range.
+- [ ] - `💻 C` and `🖥️ D` has an established cable connection but they are using a different IP address range.
 
 #### How to fix?
-1. Change `📶A1 IP address` to the same of `📶B1` but change the last octet to the next number.
-2. Change `📶C1 IP address` to the same of `📶D1` but change the last octet to the next number.
+1. Change `📶 A1 IP address` to the same of `📶 B1` but change the last octet to the next number.
+2. Change `📶 C1 IP address` to the same of `📶 D1` but change the last octet to the next number.
 
 ### Level 2
 
 ##### Goals
-- `🖥B` comunicate with `🖥A`
-- `🖥D` comunicate with `🖥C`
+- `🖥 B` comunicate with `🖥 A`
+- `🖥 D` comunicate with `🖥 C`
 
 #### Founded Issues
-- [ ] - `🖥A` and `🖥B` has an established cable connection and have a similar IP address but they have a different Mask.
-- [ ] - `🖥C` and `🖥D` has an established cable connection and have a similar IP address but they are using a private IP address.
+- [ ] - `🖥 A` and `🖥 B` has an established cable connection and have a similar IP address but they have a different Mask.
+- [ ] - `🖥 C` and `🖥 D` has an established cable connection and have a similar IP address but they are using a private IP address.
 
 #### How to fix?
-1. Change `📶B1 Mask` to the same of `📶A1`
-2. Change `📶A1 IP address` to the same of `📶B1 IP address` but change the last octet to the previous number.
-3. Change `📶C1 IP address` to `192.168.1.253`
-3. Change `📶D1 IP address` to `192.168.1.254`
+1. Change `📶 B1 Mask` to the same of `📶 A1`
+2. Change `📶 A1 IP address` to the same of `📶 B1 IP address` but change the last octet to the previous number.
+3. Change `📶 C1 IP address` to `192.168.1.253`
+3. Change `📶 D1 IP address` to `192.168.1.254`
 
