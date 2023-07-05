@@ -119,5 +119,26 @@ After performing each exercise a button called `get my config` appears. By click
 6. Change `📶 B1 Mask` to the same of `📶 R2`
 7. Change `📶 B1 IP address` to the same of `📶 R2` but change the last octet to the previous number.
 
+</details>
 
+<details>
+  <summary>Level 6</summary>
+
+##### Goals
+- `🖥 A` connect with the `🌐 Internet`
+
+#### Founded Issues
+- [ ] `📶 A1 and R1` are in the wrong range of Mask and IP address.
+- [ ] `🔄 A To` don't points to the correct `📶 R1 IP address`.
+- [ ] `🔄 R From` is wrong.
+- [ ] `🔄 Internet From` don't points to `📶 A1 IP address`.
+
+#### How to fix?
+1. Change `📶 A1 Mask` to the same of `📶 R1 Mask`
+2. Change `📶 R1 IP address` to the same of `📶 A1 IP address` but change the last octet to the previous number.
+3. Change `🔄 A To` to `📶 R1 IP address`
+4. Change `🔄 R From` to `default`
+5. Change `🔄 Internet From` to `📶 A1 IP address` plus CIDR Notation of its Mask. In this case `34.146.38.227/25`
+
+</details>
   
