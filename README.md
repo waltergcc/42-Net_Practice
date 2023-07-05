@@ -93,4 +93,31 @@ After performing each exercise a button called `get my config` appears. By click
 3. Change `📶 B1 Mask` to the same of `📶 R2`
 4. Change `📶 R1 IP address` to the same of `📶 A1` but change the last octet to the previous number.
 5. Change `📶 B1 IP address` to the same of `📶 A1` but change the last octet to the next number.
+
+</details>
+
+<details>
+  <summary>Level 5</summary>
+
+##### Goals
+- `🖥 A` comunicate with `🔗 R`
+- `🖥 B` comunicate with `🔗 R`
+- `🖥 A` comunicate with `🖥 B`
+
+#### Founded Issues
+- [ ] `🔄 A From and To` are wrong
+- [ ] `📶 A1` has a mask and ip address different from `📶 R1`
+- [ ] `🔄 B To` is wrong
+- [ ] `📶 B1` has a mask and ip address different from `📶 R2`
+
+#### How to fix?
+1. Change `🔄 A From` to `default`
+2. Change `🔄 A To` to `📶 R1 IP adress`
+3. Change `📶 A1 Mask` to the same of `📶 R1`
+4. Change `📶 A1 IP address` to the same of `📶 R1` but change the last octet to the previous number.
+5. Change `🔄 B To` to `📶 R2 IP adress`
+6. Change `📶 B1 Mask` to the same of `📶 R2`
+7. Change `📶 B1 IP address` to the same of `📶 R2` but change the last octet to the previous number.
+
+
   
