@@ -18,6 +18,7 @@ After performing each exercise a button called `get my config` appears. By click
 - [lpaube's Guide to NetPractice](https://github.com/lpaube/NetPractice)
 - [Curso de Endereçamento IP](https://www.youtube.com/playlist?list=PLAp37wMSBouCU49LV0qFbItufigjYk-sp)
 - [Network Fundamentals](https://www.youtube.com/playlist?list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8)
+- [TCP/IP Model Explained](https://www.youtube.com/watch?v=OTwp3xtd4dg)
 
 ## My Solutions
 
@@ -105,17 +106,17 @@ After performing each exercise a button called `get my config` appears. By click
 - `🖥 A` comunicate with `🖥 B`
 
 #### Founded Issues
-- [ ] `🔄 A From and To` are wrong
+- [ ] `🔄 A Dest and Jump_to` are wrong
 - [ ] `📶 A1` has a mask and ip address different from `📶 R1`
-- [ ] `🔄 B To` is wrong
+- [ ] `🔄 B Jump_to` is wrong
 - [ ] `📶 B1` has a mask and ip address different from `📶 R2`
 
 #### How to fix?
-1. Change `🔄 A From` to `default`
-2. Change `🔄 A To` to `📶 R1 IP adress`
+1. Change `🔄 A Dest` to `default`
+2. Change `🔄 A Jump_to` to `📶 R1 IP adress`
 3. Change `📶 A1 Mask` to the same of `📶 R1`
 4. Change `📶 A1 IP address` to the same of `📶 R1` - 1.
-5. Change `🔄 B To` to `📶 R2 IP adress`
+5. Change `🔄 B Jump_to` to `📶 R2 IP adress`
 6. Change `📶 B1 Mask` to the same of `📶 R2`
 7. Change `📶 B1 IP address` to the same of `📶 R2` - 1.
 
@@ -129,16 +130,16 @@ After performing each exercise a button called `get my config` appears. By click
 
 #### Founded Issues
 - [ ] `📶 A1 and R1` are in the wrong range of Mask and IP address.
-- [ ] `🔄 A To` don't points to the correct `📶 R1 IP address`.
-- [ ] `🔄 R From` is wrong.
-- [ ] `🔄 Internet From` don't points to `📶 A1 IP address`.
+- [ ] `🔄 A Jump_to` don't points to the correct `📶 R1 IP address`.
+- [ ] `🔄 R Dest` is wrong.
+- [ ] `🔄 Internet Dest` don't points to `📶 A1 IP address`.
 
 #### How to fix?
 1. Change `📶 A1 Mask` to the same of `📶 R1 Mask`
 2. Change `📶 R1 IP address` to the same of `📶 A1 IP address` - 1.
-3. Change `🔄 A To` to `📶 R1 IP address`
-4. Change `🔄 R From` to `default`
-5. Change `🔄 Internet From` to `📶 A1 IP address` + CIDR Notation of its Mask. In this case `34.146.38.227/25`
+3. Change `🔄 A Jump_to` to `📶 R1 IP address`
+4. Change `🔄 R Dest` to `default`
+5. Change `🔄 Internet Dest` to `📶 A1 IP address` + CIDR Notation of its Mask. In this case `34.146.38.227/25`
 
 </details>
 
@@ -150,22 +151,22 @@ After performing each exercise a button called `get my config` appears. By click
 
 #### Founded Issues
 - [ ] `📶 A1 and R11` are in the wrong range because the others R's network are using next ranges.
-- [ ] `🔄 A To` don't points to the correct `📶 R11 IP address`.
-- [ ] `🔄 R1 To` is wrong.
+- [ ] `🔄 A Jump_to` don't points to the correct `📶 R11 IP address`.
+- [ ] `🔄 R1 Jump_to` is wrong.
 - [ ] `📶 R12, R21, R22 and C1 Masks` are wrong
 - [ ] `📶 R21, R22 and C1 IṔ address` are wrong
-- [ ] `🔄 R2 To` is wrong.
-- [ ] `🔄 C1 To` is wrong.
+- [ ] `🔄 R2 Jump_to` is wrong.
+- [ ] `🔄 C1 Jump_to` is wrong.
 
 #### How to fix?
 1. Change all Masks to '/26'
-2. Change `🔄 A To` to `📶 R11 IP address`
+2. Change `🔄 A Jump_to` to `📶 R11 IP address`
 3. Change `📶 R21 IP address` to the same of `📶 R11 IP address` - 1.
-4. Change `🔄 R1 To` to `📶 R21 IP address`
-5. Change `🔄 R2 To` to `📶 R12 IP address`
+4. Change `🔄 R1 Jump_to` to `📶 R21 IP address`
+5. Change `🔄 R2 Jump_to` to `📶 R12 IP address`
 6. Change `📶 R22 IP address` to `103.198.14.65`
 7. Change `📶 C1 IP address` to `103.198.14.66`
-8. Change `🔄 C1 To` to `📶 R22 IP address`
+8. Change `🔄 C1 Jump_to` to `📶 R22 IP address`
 
 </details>
 
@@ -178,24 +179,24 @@ After performing each exercise a button called `get my config` appears. By click
 - `🖥 D` connect with the `🌐 Internet`
 
 #### Founded Issues
-- [ ] `🔄 R1 and R2 From` are wrong.
-- [ ] `🔄 All From except R2 are wrong.
+- [ ] `🔄 R1 and R2 Dest` are wrong.
+- [ ] `🔄 All Dest except R2 are wrong.
 - [ ] `📶 All masks except R12` are wrong.
 - [ ] `📶 All IP address except R12` are wrong.
 
 #### How to fix?
 1. Change `🔄 Internet to` to `📶 R12 IP address`
-2. Change `🔄 R1 and R2 From` to `default`
+2. Change `🔄 R1 and R2 Dest` to `default`
 3. Change `📶 All Masks` to the same of `📶 R12 Mask`
-4. Change `📶 R13 IP address` to the same of `🔄 R2 To`
+4. Change `📶 R13 IP address` to the same of `🔄 R2 Jump_to`
 5. Change `📶 R21 IP address` to the same of `📶 R13` - 1.
-6. Change `🔄 R1 To` to `📶 R21`.
-7. Change `📶 R23 IP address` to the same of `🔄 Internet To` + 1.
-8. Change `📶 R22 IP address` to the same of `🔄 Internet To` + 17.
+6. Change `🔄 R1 Jump_to` to `📶 R21`.
+7. Change `📶 R23 IP address` to the same of `🔄 Internet Jump_to` + 1.
+8. Change `📶 R22 IP address` to the same of `🔄 Internet Jump_to` + 17.
 9. Change `📶 D1 IP address` to the same of `📶 R23` + 1.
-10. Change `🔄 D To` to `📶 R23`.
+10. Change `🔄 D Jump_to` to `📶 R23`.
 11. Change `📶 C1 IP address` to the same of `📶 R22` + 1.
-12. Change `🔄 C To` to `📶 R22`.
+12. Change `🔄 C Jump_to` to `📶 R22`.
 
 </details>
 
@@ -211,32 +212,32 @@ After performing each exercise a button called `get my config` appears. By click
 - `🖥 C` connect with the `🌐 Internet`
 
 #### Founded Issues
-- [ ] `🔄 Internet From` has many entries
-- [ ] `🔄 R1 To` has many entries
+- [ ] `🔄 Internet Dest` has many entries
+- [ ] `🔄 R1 Jump_to` has many entries
 - [ ] `📶 R11, R22 and R23 Subnets` are all wrong
 - [ ] `📶 R12 and R13 IP address` are wrong
 
 #### How to fix?
-1. Delete 1 entry of `🔄 Internet From`
+1. Delete 1 entry of `🔄 Internet Dest`
 2. Delete 1 entry of `🔄 R1`
-3. Change `🔄 Àll To` to `default`
+3. Change `🔄 Àll Jump_to` to `default`
 4. Change `📶 R11 Subnet Mask` to the same of `📶 R11`
 5. Change `📶 R11 IP address` to `42.5.4.1`
 6. Change `🔄 A and B` to `📶 R11`
 7. Change `📶 A1 IP address` to the same of `📶 R11` + 1
 8. Change `📶 B1 IP address` to the same of `📶 R11` + 2
-9. Change `🔄 Internet From` to 4`2.5.4.0/24`
+9. Change `🔄 Internet Dest` to 4`2.5.4.0/24`
 10. Change `📶 R22 IP address` to `76.2.3.1`
-11. Change `🔄 C To` to `76.2.3.1`
+11. Change `🔄 C Jump_to` to `76.2.3.1`
 12. Change `📶 C1 IP address` to the same of `📶 R23` + 1
-13. Change `🔄 Internet second From` to `76.2.3.0/24`
-14. Change `📶 R23 IP address` to the same of `🔄 D To`
+13. Change `🔄 Internet second Dest` to `76.2.3.0/24`
+14. Change `📶 R23 IP address` to the same of `🔄 D Jump_to`
 15. Change `📶 D1 Mask` to the same of `📶 R23`
 16. Change `📶 D1 IP address` to the same of `📶 R23` + 1
 17. Change `📶 R13 Mask` to the same of `📶 R21`
 18. Change `📶 R21 IP address` to the same of `📶 R13` - 1
-19. Change `🔄 R1 To` to `📶 R21`
-19. Change `🔄 R2 To` to `📶 R13`
+19. Change `🔄 R1 Jump_to` to `📶 R21`
+19. Change `🔄 R2 Jump_to` to `📶 R13`
 
 </details>
 
@@ -253,24 +254,24 @@ After performing each exercise a button called `get my config` appears. By click
 - `🖥 H4` connect with the `🌐 Internet`
 
 #### Founded Issues
-- [ ] `🔄 Internet From` not fill all IPs
-- [ ] `🔄 R1 first From` is wrong
+- [ ] `🔄 Internet Dest` not fill all IPs
+- [ ] `🔄 R1 first Dest` is wrong
 - [ ] `📶 H1 and H2 Masks` are wrong
 - [ ] `📶 H2 IP address` is wrong
 - [ ] `📶 R13 Mask` is wrong
 - [ ] `📶 R22, R23 and H31 Mask and IP` are wrong
-- [ ] `🔄 H3 To` is wrong
+- [ ] `🔄 H3 Jump_to` is wrong
 
 #### How to fix?
-1. Change `🔄 Internet From` to `📶 R11 IP address` but with the last octet as `0` + CDIR notation /24
+1. Change `🔄 Internet Dest` to `📶 R11 IP address` but with the last octet as `0` + CDIR notation /24
 2. Change `📶 H1 and H2 Mask` to the same of `📶 R11`
 3. Change `📶 H2 IP address` to the same of `📶 H1` + 1
 4. Change `📶 R13 Mask` to the same of `📶 R12`
 5. Change `📶 R23 Mask` to the same of `📶 H41`
-6. Change `📶 R23 IP address` to the same of `🔄 H4 To`
+6. Change `📶 R23 IP address` to the same of `🔄 H4 Jump_to`
 7. Change `📶 R22 and H31 Mask` to `255.255.255.224`
 8. Change `📶 R22 IP address` to `135.185.182.193`
 9. Change `📶 H31 IP address` to the same of `R22` + 1
-10. Change `🔄 H3 To` to `📶 R22`
+10. Change `🔄 H3 Jump_to` to `📶 R22`
 
 </details>
