@@ -275,3 +275,5 @@ After performing each exercise a button called `get my config` appears. By click
 10. Change `🔄 H3 Jump_to` to `📶 R22`
 
 </details>
+
+## Grade: 100/100
